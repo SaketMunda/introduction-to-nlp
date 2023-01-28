@@ -16,7 +16,7 @@ Both of these types of data are often referred to as sequences (a sentence is a 
 
 To get hands-on with NLP in tensorflow, we're going to practice the steps we've used previously but this time with text data:
 
-***Text -> turn into numbers -> build a model -> train the model to find patterns -> use patterns (make predictions)***
+      Text -> turn into numbers -> build a model -> train the model to find patterns -> use patterns (make predictions)
 
 > **Resource** : [A Simple Introduction to Natural Language Processing](https://becominghuman.ai/a-simple-introduction-to-natural-language-processing-ea66a1747b32)
 
