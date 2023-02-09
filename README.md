@@ -34,3 +34,23 @@ To get hands-on with NLP in tensorflow, we're going to practice the steps we've 
 - Combining our models into an ensemble
 - Saving and loading a trained model
 - Find the most wrong prediction
+
+## Exercises
+
+- [ ] Rebuild, compile and train model_1, model_2 and model_5 using the [Keras Sequential API](https://www.tensorflow.org/api_docs/python/tf/keras/Sequential) instead of the Functional API.
+- [ ] Retrain the baseline model with 10% of the training data. How does perform compared to the Universal Sentence Encoder model with 10% of the training data?
+- [ ] Try fine-tuning the TF Hub Universal Sentence Encoder model by setting training=True when instantiating it as a Keras layer.
+
+```
+# We can use this encoding layer in place of our text_vectorizer and embedding layer
+sentence_encoder_layer = hub.KerasLayer("https://tfhub.dev/google/universal-sentence-encoder/4",
+                                        input_shape=[],
+                                        dtype=tf.string,
+                                        trainable=True) # turn training on to fine-tune the TensorFlow Hub model
+```
+- [ ] Retrain the best model you've got so far on the whole training set (no validation split). Then use this trained model to make predictions on the test dataset and format the predictions into the same format as the sample_submission.csv file from Kaggle (see the Files tab in Colab for what the sample_submission.csv file looks like). Once you've done this, [make a submission to the Kaggle competition](https://www.kaggle.com/c/nlp-getting-started/data), how did your model perform?
+- [ ] Combine the ensemble predictions using the majority vote (mode), how does this perform compare to averaging the prediction probabilities of each model?
+- [ ] Make a confusion matrix with the best performing model's predictions on the validation set and the validation ground truth labels.
+
+## Resources
+- [Natural Language Processing with TensorFlow by Mr D.Bourke](https://dev.mrdbourke.com/tensorflow-deep-learning/08_introduction_to_nlp_in_tensorflow/)
