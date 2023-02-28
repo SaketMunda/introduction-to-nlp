@@ -37,9 +37,9 @@ To get hands-on with NLP in tensorflow, we're going to practice the steps we've 
 
 ## Exercises
 
-- [ ] Rebuild, compile and train model_1, model_2 and model_5 using the [Keras Sequential API](https://www.tensorflow.org/api_docs/python/tf/keras/Sequential) instead of the Functional API.
-- [ ] Retrain the baseline model with 10% of the training data. How does perform compared to the Universal Sentence Encoder model with 10% of the training data?
-- [ ] Try fine-tuning the TF Hub Universal Sentence Encoder model by setting training=True when instantiating it as a Keras layer.
+- [x] Rebuild, compile and train model_1, model_2 and model_5 using the [Keras Sequential API](https://www.tensorflow.org/api_docs/python/tf/keras/Sequential) instead of the Functional API.
+- [x] Retrain the baseline model with 10% of the training data. How does perform compared to the Universal Sentence Encoder model with 10% of the training data?
+- [x] Try fine-tuning the TF Hub Universal Sentence Encoder model by setting training=True when instantiating it as a Keras layer.
 
 ```
 # We can use this encoding layer in place of our text_vectorizer and embedding layer
@@ -48,9 +48,32 @@ sentence_encoder_layer = hub.KerasLayer("https://tfhub.dev/google/universal-sent
                                         dtype=tf.string,
                                         trainable=True) # turn training on to fine-tune the TensorFlow Hub model
 ```
-- [ ] Retrain the best model you've got so far on the whole training set (no validation split). Then use this trained model to make predictions on the test dataset and format the predictions into the same format as the sample_submission.csv file from Kaggle (see the Files tab in Colab for what the sample_submission.csv file looks like). Once you've done this, [make a submission to the Kaggle competition](https://www.kaggle.com/c/nlp-getting-started/data), how did your model perform?
-- [ ] Combine the ensemble predictions using the majority vote (mode), how does this perform compare to averaging the prediction probabilities of each model?
-- [ ] Make a confusion matrix with the best performing model's predictions on the validation set and the validation ground truth labels.
+- [x] Retrain the best model you've got so far on the whole training set (no validation split). Then use this trained model to make predictions on the test dataset and format the predictions into the same format as the sample_submission.csv file from Kaggle (see the Files tab in Colab for what the sample_submission.csv file looks like). Once you've done this, [make a submission to the Kaggle competition](https://www.kaggle.com/c/nlp-getting-started/data), how did your model perform?
+- [x] Combine the ensemble predictions using the majority vote (mode), how does this perform compare to averaging the prediction probabilities of each model?
+- [x] Make a confusion matrix with the best performing model's predictions on the validation set and the validation ground truth labels.
+
+## Extra-curriculam
+
+To practice what you've learned, a good idea would be to spend an hour on 3 of the following (3-hours total, you could through them all if you want) and then write a blog post about what you've learned.
+
+- For an overview of the different problems within NLP and how to solve them read through:
+      - A Simple Introduction to Natural Language Processing
+      - How to solve 90% of NLP problems: a step-by-step guide
+- Go through MIT's Recurrent Neural Networks lecture. This will be one of the greatest additions to what's happening behind the RNN model's you've been building.
+- Read through the word embeddings page on the TensorFlow website. Embeddings are such a large part of NLP. We've covered them throughout this notebook but extra practice would be well worth it. A good exercise would be to write out all the code in the guide in a new notebook.
+- For more on RNN's in TensorFlow, read and reproduce the TensorFlow RNN guide. We've covered many of the concepts in this guide, but it's worth writing the code again for yourself.
+- Text data doesn't always come in a nice package like the data we've downloaded. So if you're after more on preparing different text sources for being with your TensorFlow deep learning models, it's worth checking out the following:
+      - TensorFlow text loading tutorial.
+      - Reading text files with Python by Real Python.
+- This notebook has focused on writing NLP code. For a mathematically rich overview of how NLP with Deep Learning happens, read Stanford's Natural Language Processing with Deep Learning lecture notes Part 1.
+      - For an even deeper dive, you could even do the whole CS224n (Natural Language Processing with Deep Learning) course.
+- Great blog posts to read:
+      - Andrei Karpathy's The Unreasonable Effectiveness of RNNs dives into generating Shakespeare text with RNNs.
+      - Text Classification with NLP: Tf-Idf vs Word2Vec vs BERT by Mauro Di Pietro. An overview of different techniques for turning text into numbers and then classifying it.
+      - What are word embeddings? by Machine Learning Mastery.
+- Other topics worth looking into:
+      - Attention mechanisms. These are a foundational component of the transformer architecture and also often add improvements to deep NLP models.
+      - Transformer architectures. This model architecture has recently taken the NLP world by storm, achieving state of the art on many benchmarks. However, it does take a little more processing to get off the ground, the HuggingFace Models (formerly HuggingFace Transformers) library is probably your best quick start.
 
 ## Resources
 - [Natural Language Processing with TensorFlow by Mr D.Bourke](https://dev.mrdbourke.com/tensorflow-deep-learning/08_introduction_to_nlp_in_tensorflow/)
