@@ -56,24 +56,24 @@ sentence_encoder_layer = hub.KerasLayer("https://tfhub.dev/google/universal-sent
 
 To practice what you've learned, a good idea would be to spend an hour on 3 of the following (3-hours total, you could through them all if you want) and then write a blog post about what you've learned.
 
-- For an overview of the different problems within NLP and how to solve them read through:
-  - A Simple Introduction to Natural Language Processing
-  - How to solve 90% of NLP problems: a step-by-step guide
-- Go through MIT's Recurrent Neural Networks lecture. This will be one of the greatest additions to what's happening behind the RNN model's you've been building.
-- Read through the word embeddings page on the TensorFlow website. Embeddings are such a large part of NLP. We've covered them throughout this notebook but extra practice would be well worth it. A good exercise would be to write out all the code in the guide in a new notebook.
-- For more on RNN's in TensorFlow, read and reproduce the TensorFlow RNN guide. We've covered many of the concepts in this guide, but it's worth writing the code again for yourself.
-- Text data doesn't always come in a nice package like the data we've downloaded. So if you're after more on preparing different text sources for being with your TensorFlow deep learning models, it's worth checking out the following:
-  - TensorFlow text loading tutorial.
-  - Reading text files with Python by Real Python.
-- This notebook has focused on writing NLP code. For a mathematically rich overview of how NLP with Deep Learning happens, read Stanford's Natural Language Processing with Deep Learning lecture notes Part 1.
-  - For an even deeper dive, you could even do the whole CS224n (Natural Language Processing with Deep Learning) course.
-- Great blog posts to read:
-  - Andrei Karpathy's The Unreasonable Effectiveness of RNNs dives into generating Shakespeare text with RNNs.
-  - Text Classification with NLP: Tf-Idf vs Word2Vec vs BERT by Mauro Di Pietro. An overview of different techniques for turning text into numbers and then classifying it.
-  - What are word embeddings? by Machine Learning Mastery.
-- Other topics worth looking into:
-  - Attention mechanisms. These are a foundational component of the transformer architecture and also often add improvements to deep NLP models.
-  - Transformer architectures. This model architecture has recently taken the NLP world by storm, achieving state of the art on many benchmarks. However, it does take a little more processing to get off the ground, the HuggingFace Models (formerly HuggingFace Transformers) library is probably your best quick start.
+- [ ] For an overview of the different problems within NLP and how to solve them read through:
+  - [ ] [A Simple Introduction to Natural Language Processing](https://becominghuman.ai/a-simple-introduction-to-natural-language-processing-ea66a1747b32)
+  - [ ] [How to solve 90% of NLP problems: a step-by-step guide](https://blog.insightdatascience.com/how-to-solve-90-of-nlp-problems-a-step-by-step-guide-fda605278e4e)
+- [ ] Go through [MIT's Recurrent Neural Networks lecture](https://youtu.be/SEnXr6v2ifU). This will be one of the greatest additions to what's happening behind the RNN model's you've been building.
+- [ ] Read through the [word embeddings page on the TensorFlow website](https://www.tensorflow.org/tutorials/text/word_embeddings). Embeddings are such a large part of NLP. We've covered them throughout this notebook but extra practice would be well worth it. A good exercise would be to write out all the code in the guide in a new notebook.
+- [ ] For more on RNN's in TensorFlow, read and reproduce the [TensorFlow RNN guide](https://www.tensorflow.org/guide/keras/rnn). We've covered many of the concepts in this guide, but it's worth writing the code again for yourself.
+- [ ] Text data doesn't always come in a nice package like the data we've downloaded. So if you're after more on preparing different text sources for being with your TensorFlow deep learning models, it's worth checking out the following:
+  - [ ] [TensorFlow text loading tutorial](https://www.tensorflow.org/tutorials/load_data/text).
+  - [ ] [Reading text files with Python by Real Python](https://realpython.com/read-write-files-python/).
+- [ ] This notebook has focused on writing NLP code. For a mathematically rich overview of how NLP with Deep Learning happens, [read Stanford's Natural Language Processing with Deep Learning lecture notes Part 1](https://web.stanford.edu/class/cs224n/readings/cs224n-2019-notes01-wordvecs1.pdf).
+  - [ ] For an even deeper dive, you could even do the whole [CS224n](http://web.stanford.edu/class/cs224n/) (Natural Language Processing with Deep Learning) course.
+- [ ] Great blog posts to read:
+  - [ ] Andrei Karpathy's [The Unreasonable Effectiveness of RNNs](https://karpathy.github.io/2015/05/21/rnn-effectiveness/) dives into generating Shakespeare text with RNNs.
+  - [ ] [Text Classification with NLP: Tf-Idf vs Word2Vec vs BERT](https://towardsdatascience.com/text-classification-with-nlp-tf-idf-vs-word2vec-vs-bert-41ff868d1794) by Mauro Di Pietro. An overview of different techniques for turning text into numbers and then classifying it.
+  - [ ] [What are word embeddings?](https://machinelearningmastery.com/what-are-word-embeddings/) by Machine Learning Mastery.
+- [ ] Other topics worth looking into:
+  - [ ] [Attention mechanisms](https://jalammar.github.io/visualizing-neural-machine-translation-mechanics-of-seq2seq-models-with-attention/). These are a foundational component of the transformer architecture and also often add improvements to deep NLP models.
+  - [ ] [Transformer architectures](http://jalammar.github.io/illustrated-transformer/). This model architecture has recently taken the NLP world by storm, achieving state of the art on many benchmarks. However, it does take a little more processing to get off the ground, the [HuggingFace Models (formerly HuggingFace Transformers) library](https://huggingface.co/models/) is probably your best quick start.
 
 ## Resources
 - [Natural Language Processing with TensorFlow by Mr D.Bourke](https://dev.mrdbourke.com/tensorflow-deep-learning/08_introduction_to_nlp_in_tensorflow/)
